@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:19:22 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/21 14:27:17 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/21 14:39:02 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <string>
 
 class ClapTrap {
-private:
+protected:
     std::string _name;
     int         _hit_points;
     int         _energy_points;
