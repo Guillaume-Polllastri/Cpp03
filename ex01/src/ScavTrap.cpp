@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 11:43:40 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/21 14:50:13 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/21 15:08:19 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 #include <iostream>
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
+    std::cout << "ScavTrap constructor called\n";
     this->_hit_points = 100;
     this->_energy_points = 50;
     this->_attack_damage = 20;
 }
 
-ScavTrap::ScavTrap(const ScavTrap& copy) {
+ScavTrap::ScavTrap(const ScavTrap& copy): ClapTrap(copy) {
+    std::cout << "ScavTrap copy constructor called\n";
     *this = copy;
 }
 
@@ -30,9 +32,8 @@ ScavTrap&   ScavTrap::operator=(const ScavTrap& copy) {
     return *this;
 }
 
-
-
 ScavTrap::~ScavTrap() {
+    std::cout << "ScavTrap destructor called\n";
 }
 
 void    ScavTrap::guardGate() {

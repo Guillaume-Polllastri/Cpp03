@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:42:10 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/21 13:58:47 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/21 15:16:09 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@ int main(void)
 {
     ScavTrap    toto("toto");
 
+    toto.attack("tata");
+    toto.takeDamage(5);
+    toto.beRepaired(5);
     toto.guardGate();
     return (0);
 }
