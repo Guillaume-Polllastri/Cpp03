@@ -1,49 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/21 15:20:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/23 11:20:52 by gpollast         ###   ########.fr       */
+/*   Created: 2026/01/21 11:43:40 by gpollast          #+#    #+#             */
+/*   Updated: 2026/01/23 13:27:08 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 #include <iostream>
 
-FragTrap::FragTrap(std::string name): ClapTrap(name) {
+ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
     std::cout << "ScavTrap constructor called\n";
     this->_hit_points = 100;
     this->_energy_points = 50;
     this->_attack_damage = 20;
 }
 
-FragTrap::FragTrap(const FragTrap& copy): ClapTrap(copy) {
+ScavTrap::ScavTrap(const ScavTrap& copy): ClapTrap(copy) {
     std::cout << "ScavTrap copy constructor called\n";
     *this = copy;
 }
 
-FragTrap&   FragTrap::operator=(const FragTrap& copy) {
+ScavTrap&   ScavTrap::operator=(const ScavTrap& copy) {
     std::cout << "ScavTrap copy assignment operator called\n";
     if (this != &copy)
         ClapTrap::operator=(copy);
     return *this;
 }
 
-FragTrap::~FragTrap() {
+ScavTrap::~ScavTrap() {
     std::cout << "ScavTrap destructor called\n";
 }
 
-void    FragTrap::highFivesGuys(void) {
-    std::string str;
-    
-    std::cout << this->_name << " want a positive high-fives\n";
-    std::cout << "Enter your high-fives: ";
-    std::cin >> str;
-    if (!str.empty())
-        std::cout << this->_name << " is very happy\n";
-    else
-        std::cout << this->_name << " is very sad\n";
+void    ScavTrap::guardGate() {
+    std::cout << this->_name << " the ScavTrap is now in Gate keeper mode\n";
 }
