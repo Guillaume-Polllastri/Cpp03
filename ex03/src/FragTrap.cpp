@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:20:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/23 11:20:52 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/25 20:24:47 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 FragTrap::FragTrap(std::string name): ClapTrap(name) {
     std::cout << "ScavTrap constructor called\n";
     this->_hit_points = 100;
-    this->_energy_points = 50;
-    this->_attack_damage = 20;
+    this->_energy_points = 100;
+    this->_attack_damage = 30;
 }
 
 FragTrap::FragTrap(const FragTrap& copy): ClapTrap(copy) {

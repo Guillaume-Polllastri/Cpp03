@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 14:28:38 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/21 15:12:09 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/25 23:25:06 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ public:
     ScavTrap& operator=(const ScavTrap& copy);
     ~ScavTrap();
 
+	void attack(const std::string& target);
     void guardGate();
 };
