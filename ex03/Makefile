@@ -6,7 +6,7 @@
 #    By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:36:06 by gpollast          #+#    #+#              #
-#    Updated: 2026/01/26 15:13:47 by gpollast         ###   ########.fr        #
+#    Updated: 2026/01/26 19:03:04 by gpollast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,9 @@ NAME = DiamondTrap
 
 SRCS =	src/main.cpp \
 		src/ClapTrap.cpp \
-		src/FragTrap.cpp
+		src/FragTrap.cpp \
+		src/ScavTrap.cpp \
+		src/DiamondTrap.cpp
 
 C++ = c++
 C++_FLAGS = -Wall -Wextra -Werror -std=c++98 -I./includes -g

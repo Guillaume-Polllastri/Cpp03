@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:20:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/25 20:25:22 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/26 19:07:22 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 #include <iostream>
 
 FragTrap::FragTrap(std::string name): ClapTrap(name) {
-    std::cout << "ScavTrap constructor called\n";
+    std::cout << "FragTrap constructor called\n";
     this->_hit_points = 100;
     this->_energy_points = 100;
     this->_attack_damage = 30;
 }
 
 FragTrap::FragTrap(const FragTrap& copy): ClapTrap(copy) {
-    std::cout << "ScavTrap copy constructor called\n";
+    std::cout << "FragTrap copy constructor called\n";
     *this = copy;
 }
 
 FragTrap&   FragTrap::operator=(const FragTrap& copy) {
-    std::cout << "ScavTrap copy assignment operator called\n";
+    std::cout << "FragTrap copy assignment operator called\n";
     if (this != &copy)
         ClapTrap::operator=(copy);
     return *this;
 }
 
 FragTrap::~FragTrap() {
-    std::cout << "ScavTrap destructor called\n";
+    std::cout << "FragTrap destructor called\n";
 }
 
 void    FragTrap::highFivesGuys(void) {

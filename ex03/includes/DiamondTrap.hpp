@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 13:28:40 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/26 12:58:16 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/26 19:02:21 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,6 @@ public:
 	DiamondTrap(const DiamondTrap& copy);
 	DiamondTrap&	operator=(const DiamondTrap& copy);
 	~DiamondTrap();
-}
+
+	void whoAmI();
+};
