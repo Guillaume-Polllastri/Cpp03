@@ -6,11 +6,11 @@
 #    By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:36:06 by gpollast          #+#    #+#              #
-#    Updated: 2026/01/21 16:04:36 by gpollast         ###   ########.fr        #
+#    Updated: 2026/01/26 15:13:47 by gpollast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = DiamondTrap
 
 SRCS =	src/main.cpp \
 		src/ClapTrap.cpp \
