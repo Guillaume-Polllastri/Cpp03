@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:30:34 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/21 14:46:24 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:14:12 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 #include <iostream>
 
 ClapTrap::ClapTrap(std::string name): _name(name), _hit_points(10), _energy_points(10), _attack_damage(0) {
-    std::cout << name << " the new Claptrap is appeared\n";
+    std::cout << "[ClapTrap] Constructor called\n";
 }
 
 ClapTrap::~ClapTrap() {
-    std::cout << this->_name << " the Claptrap is disappeared\n";
+    std::cout << "[ClapTrap] Destructor called\n";
 }
 
 ClapTrap::ClapTrap(const ClapTrap& copy) {
-    std::cout << "Copy constructor called\n";
+    std::cout << "[ClapTrap] Copy constructor called\n";
     *this = copy;
 }
 
 
 ClapTrap&  ClapTrap::operator=(const ClapTrap& copy) {
-    std::cout << "Copy assignment operator called\n";
+    std::cout << "[ClapTrap] Copy assignment operator called\n";
     if (this != &copy)
     {
         this->_name = copy._name;
@@ -69,4 +69,10 @@ void ClapTrap::beRepaired(unsigned int amount) {
     }
     this->_hit_points += amount;
     std::cout << this->_name << " the ClapTrap repairs itself, he has now " << this->_hit_points << " health points\n";
+}
+
+void	ClapTrap::printAttributes( void ) {
+	std::cout << "hitpoints: " << this->_hit_points
+		<< "\nenergy_points: " << _energy_points
+		<< "\nattack_damage: " << _attack_damage << std::endl;
 }

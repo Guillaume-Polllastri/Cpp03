@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:19:22 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/21 14:39:02 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:29:41 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,5 @@ public:
     void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
+	void printAttributes();
 };

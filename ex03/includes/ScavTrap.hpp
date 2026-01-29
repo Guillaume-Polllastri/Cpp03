@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 14:28:38 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/23 13:27:47 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:36:54 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 #include "ClapTrap.hpp"
 
 class ScavTrap: virtual public ClapTrap {
+protected:
+	static const int HP;
+	static const int EP;
+	static const int AD;
 public:
     ScavTrap(std::string name);
     ScavTrap(const ScavTrap& copy);
