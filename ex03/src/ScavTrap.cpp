@@ -6,16 +6,16 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 11:43:40 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/29 15:02:13 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/30 13:55:12 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 #include <iostream>
 
-const int	ScavTrap::HP = 100;
-const int	ScavTrap::EP = 50;
-const int	ScavTrap::AD = 20;
+const unsigned int	ScavTrap::HP = 100;
+const unsigned int	ScavTrap::EP = 50;
+const unsigned int	ScavTrap::AD = 20;
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
     std::cout << "[ScavTrap] Constructor called\n";

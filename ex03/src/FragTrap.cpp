@@ -6,16 +6,16 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:20:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/29 15:00:10 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/01/30 13:54:54 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 #include <iostream>
 
-const int	FragTrap::HP = 100;
-const int	FragTrap::EP = 100;
-const int	FragTrap::AD = 30;
+const unsigned int	FragTrap::HP = 100;
+const unsigned int	FragTrap::EP = 100;
+const unsigned int	FragTrap::AD = 30;
 
 FragTrap::FragTrap(std::string name): ClapTrap(name) {
     std::cout << "[FragTrap] Constructor called\n";
