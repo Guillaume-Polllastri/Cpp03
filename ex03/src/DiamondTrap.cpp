@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 22:50:03 by gpollast          #+#    #+#             */
-/*   Updated: 2026/02/01 15:50:56 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 17:08:33 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,5 @@ DiamondTrap::~DiamondTrap() {
 }
 
 void	DiamondTrap::whoAmI() {
-	std::cout << "My name is " << _name << " and my ClapTrap name is " << ClapTrap::_name << '\n';
+	std::cout << "My name is " << C_CYAN << _name << C_RESET << " and my ClapTrap name is " << C_CYAN << ClapTrap::_name << C_RESET << '\n';
 }

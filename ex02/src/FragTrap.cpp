@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:20:24 by gpollast          #+#    #+#             */
-/*   Updated: 2026/02/01 16:05:07 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 16:38:42 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,5 @@ FragTrap::~FragTrap() {
 }
 
 void    FragTrap::highFivesGuys(void) {
-    std::string str;
-    
     std::cout << this->_name << " want a positive high-fives\n";
-    std::cout << "Enter your high-fives: ";
-    std::cin >> str;
-    if (!str.empty())
-        std::cout << this->_name << " is very happy\n";
-    else
-        std::cout << this->_name << " is very sad\n";
 }

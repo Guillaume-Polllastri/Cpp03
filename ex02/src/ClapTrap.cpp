@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:30:34 by gpollast          #+#    #+#             */
-/*   Updated: 2026/02/01 15:50:56 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 16:36:53 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 #include <iostream>
 
 ClapTrap::ClapTrap(std::string name): _name(name), _hit_points(10), _energy_points(10), _attack_damage(0) {
-    std::cout << C_GREEN << name << " the new Claptrap is appeared\n" << C_RESET;
+    std::cout << C_GREEN << "[ClapTrap] Constructor called\n" << C_RESET;
 }
 
 ClapTrap::~ClapTrap() {
-    std::cout << C_GREEN << this->_name << " the Claptrap is disappeared\n" << C_RESET;
+    std::cout << C_GREEN << "[ClapTrap] Destructor called\n" << C_RESET;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& copy) {
-    std::cout << C_GREEN << "Copy constructor called\n" << C_RESET;
+    std::cout << C_GREEN << "[ClapTrap] Copy constructor called\n" << C_RESET;
     *this = copy;
 }
 
 
 ClapTrap&  ClapTrap::operator=(const ClapTrap& copy) {
-    std::cout << C_GREEN << "Copy assignment operator called\n" << C_RESET;
+    std::cout << C_GREEN << "[ClapTrap] Copy assignment operator called\n" << C_RESET;
     if (this != &copy)
     {
         this->_name = copy._name;

@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:20:28 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/29 14:59:08 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 17:01:31 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 class FragTrap: virtual public ClapTrap {
 protected:
-	static const int HP;
-	static const int EP;
-	static const int AD;
+	static const unsigned int HP;
+	static const unsigned int EP;
+	static const unsigned int AD;
 public:
     FragTrap(std::string name);
     FragTrap(const FragTrap& copy);

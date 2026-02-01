@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:42:10 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/29 14:11:26 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 17:06:01 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(void)
 	ScavTrap	tata("tata");
 	FragTrap	tutu("tutu");	
 
-	// toto.whoAmI();
+	toto.whoAmI();
 	std::cout << "\nDiamondTrap\n";
 	toto.printAttributes();
 	std::cout << "\nScavTrap\n";
