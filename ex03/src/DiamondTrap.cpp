@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 22:50:03 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/29 15:01:08 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 15:50:56 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ DiamondTrap::DiamondTrap(std::string name)
 	ScavTrap(name), 
 	_name(name)
 {
-    std::cout << "[DiamondTrap] Constructor called\n";
+    std::cout << C_GREEN << "[DiamondTrap] Constructor called\n" << C_RESET;
 	this->_hit_points = FragTrap::HP;
 	this->_energy_points = ScavTrap::EP;
 	this->_attack_damage = FragTrap::AD;
@@ -27,12 +27,12 @@ DiamondTrap::DiamondTrap(std::string name)
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& copy): ClapTrap(copy), FragTrap(copy), ScavTrap(copy) {
-    std::cout << "[DiamondTrap] Copy constructor called\n";
+    std::cout << C_GREEN << "[DiamondTrap] Copy constructor called\n" << C_RESET;
 	*this = copy;
 }
 
 DiamondTrap&	DiamondTrap::operator=(const DiamondTrap& copy) {
-    std::cout << "[DiamondTrap] Copy assignment operator called\n";
+    std::cout << C_GREEN << "[DiamondTrap] Copy assignment operator called\n" << C_RESET;
 	if (this != &copy)
 	{
 		FragTrap::operator=(copy);
@@ -43,7 +43,7 @@ DiamondTrap&	DiamondTrap::operator=(const DiamondTrap& copy) {
 }
 
 DiamondTrap::~DiamondTrap() {
-    std::cout << "[DiamondTrap] Destructor called\n";
+    std::cout << C_GREEN << "[DiamondTrap] Destructor called\n" << C_RESET;
 }
 
 void	DiamondTrap::whoAmI() {

@@ -6,13 +6,16 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:19:22 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/29 14:29:41 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 15:50:56 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <string>
+
+# define C_GREEN "\033[32m"
+# define C_RESET "\033[0m"
 
 class ClapTrap {
 protected:

@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 11:43:40 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/25 23:26:16 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/01 16:03:31 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,25 @@
 #include <iostream>
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
-    std::cout << "ScavTrap constructor called\n";
+    std::cout << C_GREEN << "[ScavTrap] Constructor called\n" << C_RESET;
     this->_hit_points = 100;
     this->_energy_points = 50;
     this->_attack_damage = 20;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& copy): ClapTrap(copy) {
-    std::cout << "ScavTrap copy constructor called\n";
-    *this = copy;
+    std::cout << C_GREEN << "[ScavTrap] Copy constructor called\n" << C_RESET;
 }
 
 ScavTrap&   ScavTrap::operator=(const ScavTrap& copy) {
-    std::cout << "ScavTrap copy assignment operator called\n";
+    std::cout << C_GREEN << "[ScavTrap] Copy assignment operator called\n" << C_RESET;
     if (this != &copy)
         ClapTrap::operator=(copy);
     return *this;
 }
 
 ScavTrap::~ScavTrap() {
-    std::cout << "ScavTrap destructor called\n";
+    std::cout << C_GREEN << "[ScavTrap] Destructor called\n" << C_RESET;
 }
 
 void ScavTrap::attack(const std::string& target) {
