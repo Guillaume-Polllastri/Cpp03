@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:42:10 by gpollast          #+#    #+#             */
-/*   Updated: 2026/02/01 17:06:01 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/02 14:11:18 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ int main(void)
 	std::cout << "\nFragTrap\n";
 	tutu.printAttributes();
 	std::cout << std::endl;
+	toto.attack("target");
     return (0);
 }

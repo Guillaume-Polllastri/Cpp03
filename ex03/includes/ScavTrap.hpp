@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 14:28:38 by gpollast          #+#    #+#             */
-/*   Updated: 2026/01/30 13:55:40 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/02 14:11:03 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ public:
     ScavTrap(std::string name);
     ScavTrap(const ScavTrap& copy);
     ScavTrap& operator=(const ScavTrap& copy);
-    ~ScavTrap();
+    virtual ~ScavTrap();
 
+	virtual void attack(const std::string& target);
     void guardGate();
 };

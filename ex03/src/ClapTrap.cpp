@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:30:34 by gpollast          #+#    #+#             */
-/*   Updated: 2026/02/01 15:50:56 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/02 14:10:17 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,9 @@ void ClapTrap::attack(const std::string& target) {
 }
 
 void ClapTrap::takeDamage(unsigned int amount) {
-    if (static_cast<int>(amount) > this->_hit_points)
+    if (static_cast<int>(amount) < 0)
+        amount = 0;
+    if ((amount) > this->_hit_points)
         this->_hit_points = 0;
     else
         this->_hit_points -= amount;
@@ -67,6 +69,8 @@ void ClapTrap::beRepaired(unsigned int amount) {
         std::cout << this->_name << " the ClapTrap cant do anything\n";
         return ;
     }
+    if (static_cast<int>(amount) < 0)
+        amount = 0;
     this->_hit_points += amount;
     std::cout << this->_name << " the ClapTrap repairs itself, he has now " << this->_hit_points << " health points\n";
 }

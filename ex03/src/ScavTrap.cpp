@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 11:43:40 by gpollast          #+#    #+#             */
-/*   Updated: 2026/02/01 15:50:56 by gpollast         ###   ########.fr       */
+/*   Updated: 2026/02/02 14:09:16 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,19 @@ ScavTrap&   ScavTrap::operator=(const ScavTrap& copy) {
 
 ScavTrap::~ScavTrap() {
     std::cout << C_GREEN << "[ScavTrap] Destructor called\n" << C_RESET;
+}
+
+void ScavTrap::attack(const std::string& target) {
+    if (this->_hit_points == 0 || this->_energy_points == 0)
+    {
+        std::cout << this->_name << " the ScavTrap cant do anything\n";
+        return ;
+    }
+    this->_energy_points--;
+    std::cout << "ScavTrap " << this->_name
+        << " attacks " << target
+        << ", causing " << this->_attack_damage
+        << " points of damage!\n";
 }
 
 void    ScavTrap::guardGate() {
